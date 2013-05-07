@@ -1,0 +1,123 @@
+[
+  {
+    "id": "1b38b6d6-dce4-4e87-ac54-26bd2f2844a2",
+    "name": "Danielle Bunten Berry",
+    "email": "otis_smith@in.org"
+  },
+  {
+    "id": "32209757-e09f-4e99-9cda-10c847da3346",
+    "name": "Tom Goodwin",
+    "email": "marta_vieira_da_silva@for.net"
+  },
+  {
+    "id": "f346f720-a990-4dff-b270-52b1921bfa00",
+    "name": "Keenan Wynn",
+    "email": "buzz_potamkin@victory.xxx"
+  },
+  {
+    "id": "74dfb297-74d2-41e9-9da5-b38c9e570900",
+    "name": "Joan Fontaine",
+    "email": "donnie_yen@at.com"
+  },
+  {
+    "id": "ee1d2aa9-5328-450a-b9f5-70b5ea8d431b",
+    "name": "Mikko Kavén",
+    "email": "tsuyoshi_nishioka@while.xxx"
+  },
+  {
+    "id": "ef602180-311a-40c7-b0ca-f33894fdf3a9",
+    "name": "Eason Chan",
+    "email": "géza_kiss@important.edu"
+  },
+  {
+    "id": "762eb006-c7b5-43d1-8222-ce83bdc0c02b",
+    "name": "Joseph Mitchell",
+    "email": "arto_salminen@the.com"
+  },
+  {
+    "id": "1db0e15f-73be-4bfe-b619-0806bed58f16",
+    "name": "Géza Kiss",
+    "email": "kellie_waymire@when.net"
+  },
+  {
+    "id": "c1552e0a-c557-490d-be32-6d6d59b4c2ae",
+    "name": "Stephen South",
+    "email": "bao_dai@new.net"
+  },
+  {
+    "id": "45dd179b-fa04-4f41-8712-41778ff8deb7",
+    "name": "Raymond Bachand",
+    "email": "luigi_boccherini@at.com"
+  },
+  {
+    "id": "524c7fe2-6b63-44e2-82ca-0b1f77f69f35",
+    "name": "George N. Leighton",
+    "email": "falco@pendas.com"
+  },
+  {
+    "id": "3f10a3b0-6016-4683-9b51-699f22920889",
+    "name": "Tamara Desni",
+    "email": "karrin_allyson@as.xxx"
+  },
+  {
+    "id": "4ae5079e-7486-4e2e-b60d-82a6e17b92b0",
+    "name": "Louis Riel",
+    "email": "catherine_deneuve@a.edu"
+  },
+  {
+    "id": "8e6d1fa0-8a97-42e6-864f-64ca61cc99ed",
+    "name": "Thomas Lanier Clingman",
+    "email": "trevor_bayne@a.edu"
+  },
+  {
+    "id": "2abbbab3-cf93-40c0-9217-46458fe81509",
+    "name": "Charles Glen King",
+    "email": "carl_freiherr_von_rokitansky@up.edu"
+  },
+  {
+    "id": "6f9787c0-2716-49c5-8d5a-71275d90abed",
+    "name": "Mariana Ochoa",
+    "email": "richard_a._scott@nobles.net"
+  },
+  {
+    "id": "8a635a09-5352-4218-85bb-b901eaca2675",
+    "name": "Collis Potter Huntington",
+    "email": "david_gross@hand.edu"
+  },
+  {
+    "id": "5b5d3bc8-91f2-4ac0-84a2-574594a73cd4",
+    "name": "Allan Simmons",
+    "email": "carlos_mencia@the.edu"
+  },
+  {
+    "id": "462bdf90-2b4c-47b5-a1b6-9be344ddb140",
+    "name": "Nikolay Cherkasov",
+    "email": "charles_de_l'ecluse@favour.xxx"
+  },
+  {
+    "id": "ee4077a9-015d-4d95-86e7-be184a3b43a8",
+    "name": "René Renno",
+    "email": "yuri_antonov@and.xxx"
+  }
+]
+
+/* SCHEMA
+
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "ipsum": "id"
+    },
+    "name": {
+      "type": "string",
+      "ipsum": "name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    }
+  }
+}
+*/

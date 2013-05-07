@@ -1,0 +1,140 @@
+{
+  "id": "4f0a8997-59fb-4581-b0be-8a057fc335ea",
+  "name": "Test Game 1",
+  "admin": "1b38b6d6-dce4-4e87-ac54-26bd2f2844a2",
+  "players": [
+    "32209757-e09f-4e99-9cda-10c847da3346",
+    "f346f720-a990-4dff-b270-52b1921bfa00",
+    "74dfb297-74d2-41e9-9da5-b38c9e570900",
+    "ee1d2aa9-5328-450a-b9f5-70b5ea8d431b",
+    "ef602180-311a-40c7-b0ca-f33894fdf3a9",
+    "762eb006-c7b5-43d1-8222-ce83bdc0c02b",
+    "1db0e15f-73be-4bfe-b619-0806bed58f16",
+    "c1552e0a-c557-490d-be32-6d6d59b4c2ae",
+    "45dd179b-fa04-4f41-8712-41778ff8deb7"
+  ],
+  "target_map": [
+    {
+      "player_from": "32209757-e09f-4e99-9cda-10c847da3346",
+      "player_to": "f346f720-a990-4dff-b270-52b1921bfa00"
+    },
+    {
+      "player_from": "f346f720-a990-4dff-b270-52b1921bfa00",
+      "player_to": "74dfb297-74d2-41e9-9da5-b38c9e570900"
+    },
+    {
+      "player_from": "74dfb297-74d2-41e9-9da5-b38c9e570900",
+      "player_to": "ee1d2aa9-5328-450a-b9f5-70b5ea8d431b"
+    },
+    {
+      "player_from": "ee1d2aa9-5328-450a-b9f5-70b5ea8d431b",
+      "player_to": "ef602180-311a-40c7-b0ca-f33894fdf3a9"
+    },
+    {
+      "player_from": "ef602180-311a-40c7-b0ca-f33894fdf3a9",
+      "player_to": "762eb006-c7b5-43d1-8222-ce83bdc0c02b"
+    },
+    {
+      "player_from": "762eb006-c7b5-43d1-8222-ce83bdc0c02b",
+      "player_to": "1db0e15f-73be-4bfe-b619-0806bed58f16"
+    },
+    {
+      "player_from": "1db0e15f-73be-4bfe-b619-0806bed58f16",
+      "player_to": "c1552e0a-c557-490d-be32-6d6d59b4c2ae"
+    },
+    {
+      "player_from": "c1552e0a-c557-490d-be32-6d6d59b4c2ae",
+      "player_to": "45dd179b-fa04-4f41-8712-41778ff8deb7"
+    },
+    {
+      "player_from": "45dd179b-fa04-4f41-8712-41778ff8deb7",
+      "player_to": "32209757-e09f-4e99-9cda-10c847da3346"
+    }
+  ],
+  "log": [
+    {
+      "timestamp": "1978-09-16T20:33:47.542Z",
+      "player_from": "c1552e0a-c557-490d-be32-6d6d59b4c2ae",
+      "player_to": "45dd179b-fa04-4f41-8712-41778ff8deb7",
+      "method": "\" He also recommended to watch that the servants not make off with leftovers to make merry at rere-suppers, rather than giving it as alms."
+    },
+    {
+      "timestamp": "1989-01-23T14:56:21.414Z",
+      "player_from": "1db0e15f-73be-4bfe-b619-0806bed58f16",
+      "player_to": "c1552e0a-c557-490d-be32-6d6d59b4c2ae",
+      "method": "They had villages in various parts of present day Vancouver, such as Stanley Park, False Creek, Kitsilano, Point Grey and near the mouth of the Fraser River."
+    },
+    {
+      "timestamp": "2004-04-22T04:05:25.834Z",
+      "player_from": "f346f720-a990-4dff-b270-52b1921bfa00",
+      "player_to": "74dfb297-74d2-41e9-9da5-b38c9e570900",
+      "method": "Potts records that \"this odious witch\" suffered from a facial deformity resulting in her left eye being set lower than her right."
+    }
+  ]
+}
+/* SCHEMA
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "ipsum": "id"
+    },
+    "name": {
+      "type": "string",
+      "ipsum": "name"
+    },
+    "admin": {
+      "type": "string",
+      "ipsum": "id"
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "ipsum": "id"
+      }
+    },
+    "target_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "player_from": {
+            "type": "string",
+            "ipsum": "id"
+          },
+          "player_to": {
+            "type": "string",
+            "ipsum": "id"
+          }
+        }
+      }
+    },
+    "log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "player_from": {
+            "type": "string",
+            "ipsum": "id"
+          },
+          "player_to": {
+            "type": "string",
+            "ipsum": "id"
+          },
+          "method": {
+            "type": "string",
+            "ipsum": "sentence"
+          }
+        }
+      }
+    }
+  }
+}
+*/

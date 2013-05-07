@@ -15,14 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "kill_methods",
-			"settings":
-			{
-				"buffer_size": 222,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,6 +48,13 @@
 	},
 	"file_history":
 	[
+		"/home/nguyening/projects/assassins/app/index.html",
+		"/home/nguyening/projects/assassins/.gitignore",
+		"/home/nguyening/Downloads/codeguy-Slim-b8181de/index.php",
+		"/home/nguyening/projects/assassins/README.md",
+		"/home/nguyening/projects/assassins/kill_methods",
+		"/etc/apache2/sites-available/gongruyen",
+		"/home/nguyening/projects/gongruyen/index.html",
 		"/usr/share/applications/defaults.list",
 		"/usr/share/applications/sublime.desktop"
 	],
@@ -97,35 +96,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "kill_methods",
-					"settings":
-					{
-						"buffer_size": 222,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -178,6 +150,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/home/nguyening/projects/assassins/assassins.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

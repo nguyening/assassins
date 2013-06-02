@@ -48,6 +48,23 @@
 	},
 	"file_history":
 	[
+		"/home/actaeon/Projects/assassins/app/data/players.json",
+		"/home/actaeon/Projects/assassins/app/index.html",
+		"/home/actaeon/Projects/assassins/app/js/app.js",
+		"/home/actaeon/Projects/assassins/app/js/controllers.js",
+		"/home/actaeon/Projects/assassins/app/partials/game.html",
+		"/home/actaeon/Projects/assassins/app/partials/gamesList.html",
+		"/home/actaeon/Projects/assassins/app/data/game_1.json",
+		"/home/actaeon/Projects/assassins/app/data/games.json",
+		"/home/actaeon/Projects/assassins/game_1.json",
+		"/home/actaeon/Projects/assassins/game_schema",
+		"/home/actaeon/Projects/assassins/app/js/services.js",
+		"/home/actaeon/Projects/assassins/app/js/filters.js",
+		"/home/actaeon/Projects/assassins/app/js/directives.js",
+		"/home/actaeon/Projects/assassins/gamesList.html",
+		"/home/actaeon/Projects/assassins/app/js/partials/gamesList.html",
+		"/home/actaeon/.config/sublime-text-2/Packages/AdvancedNewFile/README.md",
+		"/home/actaeon/Projects/assassins/app/lib/slim/index.php",
 		"/home/nguyening/projects/assassins/app/index.html",
 		"/home/nguyening/projects/assassins/.gitignore",
 		"/home/nguyening/Downloads/codeguy-Slim-b8181de/index.php",
@@ -74,6 +91,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"div",
+			"SC",
+			"myApp",
 			"40",
 			"250",
 			"textRadius",
@@ -107,7 +127,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -142,6 +162,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"gameslist",
+				"app/partials/gamesList.html"
+			],
+			[
+				"game_1",
+				"app/data/game_1.json"
+			],
+			[
+				"games",
+				"app/data/games.json"
+			],
+			[
+				"index",
+				"app/index.html"
+			]
 		],
 		"width": 0.0
 	},

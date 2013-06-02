@@ -2,9 +2,9 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']).
+angular.module('rN_assassins', ['rN_assassins.filters', 'rN_assassins.services', 'rN_assassins.directives', 'rN_assassins.controllers']).
   config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-    $routeProvider.otherwise({redirectTo: '/view1'});
+    $routeProvider.when('/games', {templateUrl: 'partials/gamesList.html', controller: 'GamesList'});
+    $routeProvider.when('/games/:gameId', {templateUrl: 'partials/game.html', controller: 'GameView'});
+    $routeProvider.otherwise({redirectTo: '/games'});
   }]);

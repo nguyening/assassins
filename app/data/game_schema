@@ -1,0 +1,65 @@
+//  SCHEMA
+// {
+//   "type": "object",
+//   "properties": {
+//     "id": {
+//       "type": "string",
+//       "ipsum": "id"
+//     },
+//     "name": {
+//       "type": "string",
+//       "ipsum": "name"
+//     },
+//     "admin": {
+//       "type": "string",
+//       "ipsum": "id"
+//     },
+//     "players": {
+//       "type": "array",
+//       "items": {
+//         "type": "string",
+//         "ipsum": "id"
+//       }
+//     },
+//     "target_map": {
+//       "type": "array",
+//       "items": {
+//         "type": "object",
+//         "properties": {
+//           "player_from": {
+//             "type": "string",
+//             "ipsum": "id"
+//           },
+//           "player_to": {
+//             "type": "string",
+//             "ipsum": "id"
+//           }
+//         }
+//       }
+//     },
+//     "log": {
+//       "type": "array",
+//       "items": {
+//         "type": "object",
+//         "properties": {
+//           "timestamp": {
+//             "type": "string",
+//             "format": "date-time"
+//           },
+//           "player_from": {
+//             "type": "string",
+//             "ipsum": "id"
+//           },
+//           "player_to": {
+//             "type": "string",
+//             "ipsum": "id"
+//           },
+//           "method": {
+//             "type": "string",
+//             "ipsum": "sentence"
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

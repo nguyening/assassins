@@ -1,0 +1,16 @@
+<a href="#/games"><== Back to games list</a>
+
+<h1>{{game.name}}</h1>
+<!-- <p>{{game.desc}}</p> -->
+<h2>Players</h2>
+<ul id="playerList">
+	<li ng-repeat="player in game.players">{{player}}</li>
+</ul>
+
+<h2>Event Log</h2>
+<ul id="eventList">
+	<li ng-repeat="event in game.log">
+		[{{event.timestamp}}] <strong>{{event.player_from}}</strong> ==> <strong>{{event.player_to}}</strong> <br />
+		<em>{{event.method}}</em>
+	</li>
+</ul>

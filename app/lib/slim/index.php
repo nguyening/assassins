@@ -1,59 +1,66 @@
 <?php
-/**
- * Step 1: Require the Slim Framework
- *
- * If you are not using Composer, you need to require the
- * Slim Framework and register its PSR-0 autoloader.
- *
- * If you are using Composer, you can skip this step.
- */
 require 'Slim/Slim.php';
+require 'routes/users.php';
+require 'routes/game_dir.php';
+require 'routes/game_desc.php';
+require 'routes/game_log.php';
+require 'routes/game_match.php';
+require 'routes/game_usr.php';
 
-\Slim\Slim::registerAutoloader();
+try {
+	\Slim\Slim::registerAutoloader();
+	$db = new PDO('mysql:host=localhost;port=3306;dbname=rn_assassins', 'testuser', 'testpwd');
+	// $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+	$app = new \Slim\Slim(array(
+		'debug' => true
+		));
+}
+catch(Exception $ex) {
+	header('HTTP/1.1 500 Internal Server Error');
+	exit();
+}
 
-/**
- * Step 2: Instantiate a Slim application
- *
- * This example instantiates a Slim application using
- * its default settings. However, you will usually configure
- * your Slim application now by passing an associative array
- * of setting names and values into the application constructor.
- */
-$app = new \Slim\Slim();
+/********************** 
+ ****** ROUTING *******
+ *********************/
+$app->get('/', function() { echo 'You\'re not in the right place.'; });
 
-/**
- * Step 3: Define the Slim application routes
- *
- * Here we define several Slim application routes that respond
- * to appropriate HTTP request methods. In this example, the second
- * argument for `Slim::get`, `Slim::post`, `Slim::put`, and `Slim::delete`
- * is an anonymous function.
- */
+/* SYSTEM USERS */
+$app->get('/users', 'rn_assassins_users\listUsers');						// GET:		list all users in the system
+$app->post('/users', 'rn_assassins_users\addUser');							// POST:	add a user to the system
 
-// GET route
-$app->get('/', function () {
-    echo 'hi';
-});
+$app->get('/users/:uid', 'rn_assassins_users\getUser');						// GET:		get information on user
+$app->put('/users/:uid', 'rn_assassins_users\updateUser');					// PUT:		update user information
+$app->delete('/users/:uid', 'rn_assassins_users\deleteUser');				// DELETE:	delete a user
 
-// POST route
-$app->post('/post', function () {
-    echo 'This is a POST route';
-});
+/* GAME DIRECTORY */
+$app->get('/games', 'rn_assassins_game_dir\listGames');						// GET:		list games
+$app->post('/games', 'rn_assassins_game_dir\addGame');						// POST:	make new game
 
-// PUT route
-$app->put('/put', function () {
-    echo 'This is a PUT route';
-});
+/* GAME DESCRIPTION */
+$app->get('/games/:gid', 'rn_assassins_game_desc\getGame');					// GET:		get all data for game #gid
+$app->put('/games/:gid', 'rn_assassins_game_desc\updateGame');				// PUT:		edit basic game data (name, start, et c.)
+$app->delete('/games/:gid', 'rn_assassins_game_desc\deleteGame');			// DELETE:	delete game, cascades
 
-// DELETE route
-$app->delete('/delete', function () {
-    echo 'This is a DELETE route';
-});
+/* GAME LOGGING */
+$app->get('/games/:gid/log', 'rn_assassins_game_log\listLog');				// GET:		retrieves event log for game
+$app->post('/games/:gid/log', 'rn_assassins_game_log\addLog');				// POST:	adds entry to event log for game
+$app->delete('/games/:gid/log', 'rn_assassins_game_log\flushLog');			// DELETE:	flushes log for a game
 
-/**
- * Step 4: Run the Slim application
- *
- * This method should be called last. This executes the Slim application
- * and returns the HTTP response to the HTTP client.
- */
+$app->get('/games/:gid/log/:entry', 'rn_assassins_game_log\getLog');		// GET:		retrieves event for game
+// $app->put('/games/:gid/log/:entry', 'rn_assassins_game_log\updateLog');		// PUT:		updates event for game
+$app->delete('/games/:gid/log/:entry', 'rn_assassins_game_log\deleteLog');	// DELETE:	deletes event for game
+
+/* GAME MATCHING */
+$app->get('/games/:gid/map', 'rn_assassins_game_match\listMap');			// GET:		get all assignments for a game
+$app->post('/games/:gid/map', 'rn_assassins_game_match\addMap');			// POST:	push assignments for a game
+$app->delete('/games/:gid/map', 'rn_assassins_game_match\flushMap');		// DELETE:	flushes assignments for a game
+
+/* GAME USERS */
+$app->get('/games/:gid/users', 'rn_assassins_game_usr\listUsers');			// GET:		get roster for a game
+$app->post('/games/:gid/users', 'rn_assassins_game_usr\addUser');			// POST:	add a user to the roster for a game
+$app->delete('/games/:gid/users', 'rn_assassins_game_usr\flushUsers');		// DELETE:	flushes roster for a game
+
+$app->delete('/games/:gid/users/:uid', 'rn_assassins_game_usr\deleteUser');	// DELETE:	removes a user from a roster
+
 $app->run();
